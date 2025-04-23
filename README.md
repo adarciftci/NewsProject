@@ -28,6 +28,7 @@ Haber verileri statik `.json` dosyalarından alınarak HTML üzerinde dinamik ş
 - **Haber Kartları:** Başlık, açıklama ve görsel içeren içerik kartları.
 - **Responsive Tasarım:** Mobil ve masaüstü cihazlarda uyumlu görünüm.
 - **Statik Veri Kullanımı:** Gerçek zamanlı veriler yerine mock (örnek) veri yapısı.
+- **Ek bloklar:** Ek bloklar "Yazarlar ve Ekonomi" kategorilerinin altına ödevde istenildiği gibi statik bir şekilde eklendi.
 
 ---
 
