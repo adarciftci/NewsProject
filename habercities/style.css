@@ -1,0 +1,782 @@
+/* === GENEL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* === NAVBAR ÜST === */
+  .navbar-top {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 36px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search-box {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .menu-right a {
+    color: white;
+    margin-left: 12px;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+  }  
+  
+  /* === ALT NAVBAR === */
+  .navbar-bottom {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .main-menu li {
+    position: relative;
+  }
+  
+  .main-menu > li > a {
+    display: block;
+    padding: 14px 18px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .main-menu li:hover > a {
+    background-color: #eee;
+  }
+  
+  /* === ALT MENÜ (submenu) === */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    list-style: none;
+  }
+  
+  .submenu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+  
+
+
+
+  /* === FINANCE BAR === */
+  .finance-bar {
+    background-color: #f8f9fa;
+    padding: 10px 24px;
+    font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .finance-item {
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .finance-code {
+    font-weight: bold;
+    color: #212529;
+  }
+  
+  .finance-rate {
+    color: #212529;
+  }
+  
+  .finance-change.up {
+    color: #198754; /* yeşil */
+  }
+  
+  .finance-change.down {
+    color: #dc3545; /* kırmızı */
+  }
+  
+
+
+
+  /* === SIDE PANEL === */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+    padding: 16px;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 1100;
+  }
+  
+  .side-panel.open {
+    left: 0;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .panel-header .logo {
+    font-size: 1.5rem;
+    color: #e50914;
+    font-weight: bold;
+  }
+
+  .side-panel .search-box {
+    padding: 8px 12px;
+    border: 1px solid #ddd;         
+    border-radius: 20px;            
+    width: 100%;                    
+    margin-top: 12px;
+    font-size: 1rem;
+    outline-color: #e50914;         
+  }  
+  
+  #closePanel {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #e50914;
+    cursor: pointer;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .category-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    cursor: pointer;
+  }
+  
+  .category-list li:hover {
+    background-color: #f8f8f8;
+  }
+  
+  /* === OVERLAY === */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1000;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+
+
+  /* === SLIDER + WEATHER WIDGET === */
+  
+  .slider-weather-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  /* === WEATHER WRAPPER === */
+  .weather-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+  /* === WEATHER BOX === */
+  .weather-box {
+    height: 340px;
+    width: 480px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: scale(1.05);        
+    transform-origin: top center;  */
+  }
+
+  #weatherapi-weather-widget-4 {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);           /* Kutunun tamamına sığdırmak için orantılı küçültme */
+    transform-origin: top center;
+  }
+
+  /* === Küçük Paralel Reklam === */
+  .short-news-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #fafafa;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 460px;
+  }
+  
+  .short-news-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .news-card-img {
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .news-card-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+  }
+  
+  
+
+  /* === SLIDER HABER === */
+  .slider-section {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    height: 500px;
+    margin: 20px 2px;
+    margin-left: -60px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  .slider-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-item {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+/* === SLIDER BUTONLARI === */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2); /* soluk görünüm */
+    border: none;
+    color: rgba(255, 255, 255, 0.5);      /* soluk ok rengi */
+    font-size: 2rem;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 0px; /* tam yuvarlak */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .slider-btn.left {
+    left: 2px;
+  }
+  
+  .slider-btn.right {
+    right: 2px;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+
+  
+
+
+  /* === STICKY REKLAM GENEL === */
+.sticky-ad {
+    position: fixed;
+    top: 100px;
+    width: 210px;
+    height: auto;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* SAĞ ve SOL konumlar */
+  .sticky-right {
+    right: 24px;
+  }
+  
+  .sticky-left {
+    left: 24px;
+  }
+  
+  /* GÖRSEL BOYUTU */
+  .sticky-ad img {
+    width: 210px;
+    height: 560px;
+    display: block;
+  }
+  
+  /* KAPATMA BUTONU */
+  .close-btn {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: #e94040;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    line-height: 24px;
+  }
+  
+  .sticky-ad a:hover img {
+    filter: brightness(90%);
+    transition: filter 0.3s ease;
+  }
+  
+  
+
+
+
+
+  /* SHORT NEWS */
+/* === KATEGORİLER === */
+.news-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.news-card p {
+  padding: 12px;
+  font-size: 0.95rem;
+  color: #222;
+  font-weight: bold;
+}
+
+/* === BAŞLIK ORTALI VE NOKTALI === */
+.section-heading-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 48px 0 24px;
+}
+
+.section-heading-wrapper::before,
+.section-heading-wrapper::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px dotted #ddd;
+}
+
+.section-heading {
+  padding: 0 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #111;
+}
+
+  
+
+
+
+/* === FOOTER === */
+.site-footer {
+    background-color: #26272b;
+    color: #fff;
+    padding: 40px 20px 20px;
+    margin-top: 100px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  /* Alt Kısım */
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 24px;
+  }
+  
+  .footer-social .icons a {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 1.4rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social .icons a:hover {
+    color: #ccc;
+  }
+  
+  .footer-apps .apps img {
+    margin-right: 10px;
+    height: 38px;
+  }
+  
+
+
+
+
+  /* === RESPONSIVE === */
+/* === SLIDER GÖRSELLERİ === */
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  
+  /* === RESPONSIVE MEDIA QUERIES === */
+  @media screen and (max-width: 1024px) {
+    /* Sticky reklamları gizle */
+    .sticky-ad {
+      display: none;
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .slider-weather-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .slider-section {
+      max-width: 100%;
+      height: 420px; /* ⬆️ Tabletlerde daha uzun slider */
+      margin-left: 0;
+      margin: 20px auto;
+    }
+  
+    .weather-box {
+      width: 90%;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* === NAVBAR === */
+    .navbar-top {
+      padding: 12px 20px;
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    /* === ANA MENÜ (YATAY KAYDIRILABİLİR) === */
+    .main-menu {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;      
+      padding: 0;
+      margin: 0;
+      justify-content: flex-start; /* ✅ tam sol hizalı başlat */
+    }
+  
+    .main-menu::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .main-menu > li {
+      flex-shrink: 0;
+    }
+  
+    .main-menu > li > a {
+      padding: 12px 14px;
+      white-space: nowrap;
+    }
+  
+    /* === ALT MENÜ (SUBMENU) === */
+    .submenu {
+      position: static;
+      box-shadow: none;
+      padding-left: 16px;
+      background: none;
+    }
+  
+    /* === HAVA DURUMUNU MOBİLDE GİZLE === */
+    .weather-section {
+      display: none !important;
+    }
+  
+    /* === SLIDER === */
+    .slider-section {
+      width: 100%;
+      height: 380px; /* ⬆️ Mobilde daha uzun alan */
+      margin: 20px auto;
+    }
+  
+    .slider-btn {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    /* === SHORT NEWS === */
+    .short-news-card {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+    }
+  
+    .news-card-img {
+      width: 100%;
+      height: 160px;
+    }
+  
+    .section-heading-wrapper {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .footer-apps .apps img {
+      height: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* === SLIDER BOYUTU === */
+    .slider-section {
+      height: 320px; /* ⬆️ Küçük ekranlarda daha görünür slider */
+    }
+  
+    .slider-btn {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  
+    .news-card img {
+      height: 140px;
+    }
+  
+    .news-card p {
+      font-size: 0.9rem;
+    }
+  
+    .section-heading {
+      font-size: 1.3rem;
+    }
+  
+    .footer-column h4 {
+      font-size: 1rem;
+    }
+  
+    .footer-column ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .footer-apps .apps img {
+      height: 30px;
+    }
+  }
+  
+  
+  

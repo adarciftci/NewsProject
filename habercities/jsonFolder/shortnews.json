@@ -1,0 +1,118 @@
+{
+    "short_news": {
+      "günün içinden": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/26196520250421268682420112002286highjpg-FDGnbAImNUGpWP38WkNiNg.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/adana-da-evde-yangin-cikti-bir-kisinin-cansiz-bedeni-bulundu-p165316",
+          "description": "Adana'da evde yangın çıktı, bir kişinin cansız bedeni bulundu"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/aa202504213770535237705345uskudardakazayapansurucuotomobilinibirakipkactijpg-3Tl83m-DS06Cts2vZERUog.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/otomobil-bahceye-daldi-surucu-araci-birakip-kacti-p165314",
+          "description": "Üsküdar'da bahçeye dalan sürücü otomobilini bırakıp kaçtı"
+        },
+        {
+          "id": 3,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/mrdnpkpplskzjpg-o8wfCDNzE06q26ileF0FKg.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/dur-ihtarina-uymadi-kapan-dan-kacti-p165248",
+          "description": "Kapandan kaçan sürücü polise çarptı"
+        }
+      ],
+      "ekonomi": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/dolarjpg-57mSZ-WWDUqqEdVIGDiyIw.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/dolar-dunyada-cakildi-turkiye-de-yaprak-kimildamadi-p165225",
+          "description": "Dolar dünyada çakıldı Türkiye'de yaprak kımıldamadı!"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/trump-ve-powelljpg-mKr1V64xZES0gL05V9Z0ag.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/trump-fed-baskani-powell-a-seslendi-mr-too-late-p165222",
+          "description": "Trump, Fed Başkanı Powell'a seslendi: Mr. Too Late"
+        },
+        {
+          "id": 3,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/altin-gram-bilezik-ekonomi-aa-1jpg-SfNFqZ0_tkOZXImOQB54tA.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/altinin-kilogram-fiyati-4-milyon-238-bin-liraya-yukseldi-p165220",
+          "description": "Altının kilogram fiyatı 4 milyon 238 bin liraya yükseldi"
+        }
+      ],
+      "gündem": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/mattia-ahmet-minguzzi-gorsel-123321jpg-HTozevIl2kyL3fSsun632g.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/mattia-ahmet-minguzzi-cinayeti-orgutlu-suclar-kapsamina-alindi-p165262",
+          "description": "Mattia Ahmet Minguzzi cinayetinde yeni gelişme"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/rokjpg-3nMfQ6MslEqRAHaxGcqL7w.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/mansur-yavas-tan-cok-sert-rasim-ozan-kutahyali-tepkisi-p165197",
+          "description": "Mansur Yavaş'tan çok sert 'ROK 'tepkisi"
+        },
+        {
+          "id": 3,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2024/2/tekeljpg-WDXdVbpht0WnomlCbJW7cQ.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/esenyurt-taki-tekel-bayii-cinayeti-davasinda-ceza-yagdi-p165301",
+          "description": "Esenyurt'taki tekel bayii davasında ceza yağdı"
+        }
+      ],
+      "spor": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/3/fatihterimjpg-57lQQhWEN0WtsYSB8T7fqg.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/fatih-terim-in-takimi-berabere-kaldi-p165328",
+          "description": "Fatih Terim'in takımı berabere kaldı"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/depophotos18497801jpg-HS7Z5m5wfUuatU4bwpqEJQ.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/zeynep-sonmez-madrid-de-final-turunda-p165226",
+          "description": "Zeynep Sönmez, Madrid'de final turunda"
+        },
+        {
+          "id": 3,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/aa202504213770299837702997galatasaraykafilesikonyayageldijpg-kM3rIPNX-0WpD7fzpyp-Gg.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/galatasaray-kafilesi-konya-ya-geldi-p165252",
+          "description": "Galatasaray, Konya'ya üç eksikle gitti"
+        }
+      ],
+      "magazin": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/mertramazandemiraskerjpehjpeg-WOeM8AvrNEyr1PsrB0o2Fg.jpeg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/mert-ramazan-demir-in-asker-fotografi-gundem-oldu-p165024",
+          "description": "Mert Ramazan Demir askere gitmişti! Günler sonra gelen ilk fotoğraf"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/berkatanjpeg-VDiOIM4XC0q-deV-drrTHA.jpeg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/olumden-donen-berk-atan-dogrudan-benden-duyun-diyerek-son-durumunu-acikladi-p165005",
+          "description": "Ölümden dönen oyuncu 'Doğrudan benden duyun' diyerek açıkladı"
+        },
+        {
+          "id": 3,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/ezgisenlerjpeg-9tRp6X4pF027qDpfxZ_yHw.jpeg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/ezgi-senler-cocukluk-askiyla-nisanlandi-p164987",
+          "description": "Ünlü oyuncu çocukluk aşkıyla nişanlandı"
+        }
+      ],
+      "siyaset": [
+        {
+          "id": 1,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/akp-iyi-parti-brs-ilce-bld-bsk-1jpg-McbVwtxOgk2xuPJ-YFexSw.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/esenyurt-taki-tekel-bayii-cinayeti-davasinda-ceza-yagdi-p165301",
+          "description": "Esenyurt'taki tekel bayii davasında ceza yağdı"
+        },
+        {
+          "id": 2,
+          "imageLink": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/ahmettjpg-RWp3dvLI1EK6ecGtapnlGw.jpg?w=490&h=276&mode=crop&scale=both",
+          "newsLink": "https://www.sozcu.com.tr/ahmet-turk-imrali-heyetinden-neden-yer-almadi-p165149",
+          "description": "Pervin Buldan, Abdullah Öcalan'ın mesajını okudu!"
+        }
+      ]
+    }
+  }

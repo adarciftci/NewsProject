@@ -1,0 +1,53 @@
+{
+    "finance_bar": [
+      {
+        "type": "currency",
+        "code": "USD",
+        "name": "Amerikan Doları",
+        "rate": 38.20,
+        "change": "+1.44%",
+        "source": "XE.com"
+      },
+      {
+        "type": "currency",
+        "code": "EUR",
+        "name": "Euro",
+        "rate": 44.19,
+        "change": "+2.70%",
+        "source": "XE.com"
+      },
+      {
+        "type": "currency",
+        "code": "GBP",
+        "name": "İngiliz Sterlini",
+        "rate": 51.12,
+        "change": "+1.97%",
+        "source": "XE.com"
+      },
+      {
+        "type": "crypto",
+        "code": "BTC",
+        "name": "Bitcoin",
+        "rate": 3338610.13,
+        "change": "+3.18%",
+        "source": "CoinMarketCap"
+      },
+      {
+        "type": "crypto",
+        "code": "ETH",
+        "name": "Ethereum",
+        "rate": 59960.35,
+        "change": "-2.30%",
+        "source": "KuCoin"
+      },
+      {
+        "type": "stock",
+        "code": "BIST100",
+        "name": "BIST 100 Endeksi",
+        "rate": 9321.64,
+        "change": "-5.46%",
+        "source": "Investing.com"
+      }
+    ]
+  }
+  

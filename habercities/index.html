@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+
+<!-- === ÜST NAVBAR === -->
+<header class="navbar-top">
+  <div class="navbar-container">
+    <div class="menu-left">
+      <button class="menu-toggle">☰</button>
+      <input type="text" class="search-box" placeholder="Haber ara...">
+    </div>
+
+    <div class="logo">HaberCities</div>
+
+    <div class="menu-right">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><strong>PLUS+</strong></a>
+    </div>
+  </div>
+</header>
+
+<!-- === ALT NAVBAR === -->
+<nav class="navbar-bottom">
+  <ul class="main-menu">
+    <li><a href="#">SON DAKİKA</a></li>
+    <li class="has-submenu">
+      <a href="#">YAZARLAR</a>
+      <ul class="submenu">
+        <li><a href="#">Emin Çölaşan</a></li>
+        <li><a href="#">Uğur Dündar</a></li>
+        <li><a href="#">Ege Cansen</a></li>
+        <li><a href="#">Saygı Öztürk</a></li>
+        <li><a href="#">Erdal Sağlam</a></li>
+      </ul>
+    </li>
+    <li><a href="#">GÜNDEM</a></li>
+    <li class="has-submenu">
+      <a href="#">EKONOMİ</a>
+      <ul class="submenu">
+        <li><a href="#">Borsa</a></li>
+        <li><a href="#">Döviz</a></li>
+        <li><a href="#">Altın</a></li>
+      </ul>
+    </li>
+    <li><a href="#">DÜNYA</a></li>
+    <li><a href="#">SPOR</a></li>
+    <li><a href="#">GÜNÜN İÇİNDEN</a></li>
+    <li><a href="#">MAGAZİN</a></li>
+    <li><a href="#">FİNANS</a></li>
+    <li><a href="#">RESMİ İLANLAR</a></li>
+  </ul>
+</nav>
+
+<!-- === FİNANS BAR === -->
+<section class="finance-bar" id="financeBar">
+    <!-- JS ile doldurulacak -->
+  </section>
+  
+
+<!-- === SIDE PANEL === -->
+<div id="sideCategoryPanel" class="side-panel">
+    <div class="panel-header">
+      <span class="logo">HaberCities</span>
+      <button id="closePanel">&times;</button>
+    </div>
+    <input type="text" class="search-box" placeholder="Haber ara...">
+    <ul class="category-list">
+      <li>SON DAKİKA</li>
+      <li>YAZARLAR</li>
+      <li>GÜNDEM</li>
+      <li>EKONOMİ</li>
+      <li>DÜNYA</li>
+      <li>GÜNÜN İÇİNDEN</li>
+      <li>SPOR</li>
+      <li>HAYAT</li>
+      <li>MAGAZİN</li>
+      <li>E-GAZETE</li>
+      <li>OTOMOTİV</li>
+      <li>FİNANS</li>
+      <li>TEKNOLOJİ</li>
+    </ul>
+  </div>
+  
+  <!-- === OVERLAY === -->
+  <div id="overlay" class="overlay"></div>
+  
+
+<!-- === SLIDER + WEATHER === -->
+<section class="slider-weather-wrapper">
+  
+    <!-- === HABER SLIDER === -->
+    <div class="slider-section">
+      <div class="slider-container" id="sliderContainer"></div>
+      <button class="slider-btn left" id="prevBtn">‹</button>
+      <button class="slider-btn right" id="nextBtn">›</button>
+    </div>
+  
+    <!-- === HAVA DURUMU KUTUSU === -->
+    <div class="weather-section">
+
+      <div class="weather-box">
+        <div id="weatherapi-weather-widget-4"></div>
+        <script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2437419&wid=4&tu=1&div=weatherapi-weather-widget-4' async></script>
+        <noscript>
+        <a href="https://www.weatherapi.com/weather/q/izmir-2437419">10 day hour by hour Izmir weather</a>
+        </noscript>
+      </div>
+
+    <!-- === ALT HABER KARTI === -->
+    <a href="https://www.sozcu.com.tr/kadinlarin-ucretli-dogum-izni-suresi-uzatiliyor-p165207" target="_blank" class="short-news-card">
+        <img src="https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2025/4/kadin-dogum-suresi-iznijpg-vy7r79lPf0mz8YBsEEyH1Q.jpg?w=300&h=169&mode=crop&scale=both" 
+            alt="Kadın doğum izni haberi" 
+            class="news-card-img">
+        <div class="news-card-text">
+        Doğum yapan <br>
+        kadınların izin <br>
+        süreleri uzatılıyor
+        </div>
+    </a>
+
+    </div>
+  
+  </section>
+  
+  
+  
+<!-- === STICKY SAĞ REKLAM === -->
+<div class="sticky-ad sticky-right" id="stickyRightAd">
+    <button class="close-btn" onclick="document.getElementById('stickyRightAd').style.display='none'">×</button>
+    <a href="https://www.thekindcup.com/about" target="_blank">
+      <img src="folder/images/paralel_image.png" alt="Reklam" />
+    </a>
+  </div>
+  
+  <!-- === STICKY SOL REKLAM === -->
+  <div class="sticky-ad sticky-left" id="stickyLeftAd">
+    <button class="close-btn" onclick="document.getElementById('stickyLeftAd').style.display='none'">×</button>
+    <a href="https://www.thekindcup.com/about" target="_blank">
+      <img src="folder/images/paralel_image.png" alt="Reklam" />
+    </a>
+  </div>  
+  
+
+
+
+  <!-- === SHORT NEWS === -->
+  <section class="news-groups"></section>
+
+
+  <script>
+    fetch("https://run.mocky.io/v3/a032c3a6-c53f-4fcd-9f83-d5ef20f4a592")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.querySelector('.news-groups');
+        const groups = data.short_news;
+  
+        for (const [groupName, newsList] of Object.entries(groups)) {
+          const groupSection = document.createElement('div');
+          groupSection.className = 'news-group';
+  
+          // Kategorinin başlığı ve süsleri
+          const headingWrapper = document.createElement("div");
+          headingWrapper.className = "section-heading-wrapper";
+  
+          const heading = document.createElement("h2");
+          heading.className = "section-heading";
+          heading.textContent = groupName.toUpperCase();
+  
+          headingWrapper.appendChild(heading);
+          groupSection.appendChild(headingWrapper);
+  
+          // Kartlar
+          const cardsWrapper = document.createElement('div');
+          cardsWrapper.className = 'news-cards';
+  
+          newsList.forEach(news => {
+            const card = document.createElement('a');
+            card.className = 'news-card';
+            card.href = news.newsLink;
+            card.target = '_blank';
+            card.rel = 'noopener noreferrer';
+  
+            const img = document.createElement('img');
+            img.src = news.imageLink;
+            img.alt = news.description;
+  
+            const desc = document.createElement('p');
+            desc.textContent = news.description;
+  
+            card.appendChild(img);
+            card.appendChild(desc);
+            cardsWrapper.appendChild(card);
+          });
+  
+          groupSection.appendChild(cardsWrapper);
+          container.appendChild(groupSection);
+        }
+      })
+      .catch(error => console.error("Haberler yüklenemedi:", error));
+  </script>
+  
+    
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- 1. Sütun: Haberler -->
+      <div class="footer-column">
+        <h4>Haberler</h4>
+        <ul>
+          <li><a href="#">Yazarlar</a></li>
+          <li><a href="#">Finans Haberleri</a></li>
+          <li><a href="#">Ekonomi Haberleri</a></li>
+          <li><a href="#">Magazin Haberleri</a></li>
+          <li><a href="#">Hayat Haberleri</a></li>
+          <li><a href="#">Dünya Haberleri</a></li>
+        </ul>
+      </div>
+  
+      <!-- 2. Sütun: Güncel Haberler -->
+      <div class="footer-column">
+        <h4>Güncel Haberler</h4>
+        <ul>
+          <li><a href="#">Günün İçinden Haberler</a></li>
+          <li><a href="#">Sözcü Web TV</a></li>
+          <li><a href="#">Spor Haberleri</a></li>
+          <li><a href="#">Sözcü E-Gazete</a></li>
+          <li><a href="#">Tüm Haberler</a></li>
+        </ul>
+      </div>
+  
+      <!-- 3. Sütun: İletişim -->
+      <div class="footer-column">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="#">İletişim</a></li>
+          <li><a href="#">Künye</a></li>
+          <li><a href="#">Reklam Ver</a></li>
+          <li><a href="#">Vefat İlanları</a></li>
+        </ul>
+      </div>
+  
+      <!-- 4. Sütun: KVKK -->
+      <div class="footer-column">
+        <h4>Kvkk</h4>
+        <ul>
+          <li><a href="#">Kişisel Verileri Koruma Kanunu</a></li>
+          <li><a href="#">Müşteri Aydınlatma Metni</a></li>
+          <li><a href="#">Çerez Politikası</a></li>
+          <li><a href="#">Veri Saklama ve İmha</a></li>
+          <li><a href="#">Kamera Aydınlatma Metni</a></li>
+          <li><a href="#">KVKK Başvuru Formu</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- ALT ALAN -->
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <h4>Sosyal Medya</h4>
+        <div class="icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-apps">
+        <h4>Uygulamalarımız</h4>
+        <div class="apps">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="App Store" height="40">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="40">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
