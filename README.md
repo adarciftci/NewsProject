@@ -1,6 +1,6 @@
 # HaberCities
 
-Bu proje, şehir temalı bir haber portalı ön yüz tasarımıdır. Farklı şehirlerden gelen haber içerikleri modern ve kullanıcı dostu bir arayüzle listelenir.  
+Bu proje, bir haber portalı ön yüz tasarımıdır. Gelen haber içerikleri modern ve kullanıcı dostu bir arayüzle listelenir.  
 
 Haber verileri statik `.json` dosyalarından alınarak HTML üzerinde dinamik şekilde gösterilir.
 
@@ -15,7 +15,7 @@ Haber verileri statik `.json` dosyalarından alınarak HTML üzerinde dinamik ş
 
 ## 📰 Proje Özeti
 
-- Tüm şehirlerden haberler `jsonFolder` dosyasının alt dosyalarından çekilerek sayfaya yansıtılır.
+- Haberler `jsonFolder` dosyasının alt dosyalarından çekilerek sayfaya yansıtılır.
 - JavaScript ile veriler dinamik olarak HTML içerisine eklenir.
 - Statik veri yapısı kullanılarak örnek bir haber portalı simüle edilmiştir.
 - Kullanıcı etkileşimleri temel seviyede olup, veriler otomatik olarak yüklenir.
@@ -24,7 +24,7 @@ Haber verileri statik `.json` dosyalarından alınarak HTML üzerinde dinamik ş
 
 ## ✨ Özellikler
 
-- **Ana Sayfa:** Tüm şehir haberlerinin listelendiği temel arayüz.
+- **Ana Sayfa:** Tüm haberlerin listelendiği temel arayüz.
 - **Haber Kartları:** Başlık, açıklama ve görsel içeren içerik kartları.
 - **Responsive Tasarım:** Mobil ve masaüstü cihazlarda uyumlu görünüm.
 - **Statik Veri Kullanımı:** Gerçek zamanlı veriler yerine mock (örnek) veri yapısı.
